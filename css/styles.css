@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #6A6A6A;
+}
+
+.noAutoPos {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR CODE STARTS */
+.navBarTitle {
+    padding: 1vmin 5vmin 1vmin;
+    font-size: 48px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#navBar {
+    height: 8vmin;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #FFA500;
+    overflow: hidden;
+}
+
+#navBar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2.5vmin 4vmin 2.5vmin;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#navBar a:hover {
+    background-color: #FF5C00;
+    color: white;
+    text-decoration: underline;
+}
+
+#navBar a:visited {
+    color: #B24000;
+}
+
+#navBar a:visited:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#navBar a.active {
+    background-color: #FF5C00;
+    color: #0066FF;
+    text-decoration: underline;
+}
+/* NAVBAR CODE ENDS */
+
+/* HERO IMAGE CODE STARTS */
+.heroImage {
+background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pexels-felix-mittermeier-2832022.jpg);
+height: 80vmin;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.heroText {
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: absolute;
+}
+/* HERO IMAGE CODE ENDS */
+
+.headImage {
+    background-color: #B24000;
+    display:inline-flex;
+    float: left;
+    border: 2px solid black;
+    margin: 2vmin;
+}
