@@ -1,6 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #6A6A6A;
+    background-color: #5e5e5e;
+    color: white;
+    font-size: 24px;
 }
 
 .noAutoPos {
@@ -9,18 +11,24 @@ body {
 }
 
 /* NAVBAR CODE STARTS */
+.navBarDiv {
+    position: sticky;
+}
+
 .navBarTitle {
-    padding: 1vmin 5vmin 1vmin;
-    font-size: 48px;
+    color: black;
+    font-size: 5vh;
+    padding: 1vmin 3vmin 1vmin 3vmin;
     font-weight: normal;
     text-transform: uppercase;
+    display: inline;
+    float: left;
 }
 
 #navBar {
-    height: 8vmin;
+    height: 8vh;
     width: 100%;
     position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
     background-color: #FFA500;
     overflow: hidden;
@@ -31,10 +39,10 @@ body {
     display: block;
     color: black;
     text-align: center;
-    padding: 2.5vmin 4vmin 2.5vmin;
+    padding: 2.5vmin 1em 2.5vmin;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 3vh;
 }
 
 #navBar a:hover {
@@ -61,13 +69,14 @@ body {
 
 /* HERO IMAGE CODE STARTS */
 .heroImage {
-background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pexels-felix-mittermeier-2832022.jpg);
-height: 80vmin;
-width: 100%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pexels-felix-mittermeier-2832022.jpg);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 4px solid white;
 }
 
 .heroText {
@@ -81,10 +90,49 @@ position: relative;
 }
 /* HERO IMAGE CODE ENDS */
 
-.headImage {
+.leadImage {
     background-color: #B24000;
     display:inline-flex;
     float: left;
-    border: 2px solid black;
-    margin: 2vmin;
+    border: 2px solid white;
+    margin: 0.5vmin 3vmin 2vmin 3vmin;
 }
+
+.leadText {
+    margin-right: 3vmin;
+    margin-left: 3vmin;
+    font-size: 3.25vh;
+    text-align: justify;
+}
+
+/* HR WITH TEXT INSERT STARTS */
+.hrTextInsert {
+    overflow: hidden;
+    text-align: center;
+    font-size: 3vh;
+  }
+  
+  .hrTextInsert:before,
+  .hrTextInsert:after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 30vw;
+    margin: 0px 25px;
+  }
+  
+  .hrTextInsert:before {
+    right: 0.5em;
+    margin-left: -50%;
+    background-image: linear-gradient(90deg, #5e5e5e, white);
+  }
+  
+  .hrTextInsert:after {
+    left: 0.5em;
+    margin-right: -50%;
+    background-image: linear-gradient(90deg, white, #5e5e5e);
+  }
+  /* HR WITH TEXT INSERT ENDS */
