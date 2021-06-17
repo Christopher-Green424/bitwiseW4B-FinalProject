@@ -23,7 +23,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background-image: radial-gradient(circle, #FFA500, #ff7b00);
-    outline: 1px solid #5e5e5e;
+    outline: 1px solid white;
 }
     /* SCROLLBAR CODE ENDS */
 
@@ -104,6 +104,14 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
 }
     /* HERO IMAGE CODE ENDS */
+
+.musicEmbed {
+    display: block;
+    background-color: #2e2e2e;
+    text-align: center;
+    height: 120px;
+    border-bottom: 4px solid white;
+}
 
 .leadImage {
     background-image: radial-gradient(circle, #2b2b2b 60%, white 80%);
