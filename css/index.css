@@ -1,0 +1,102 @@
+/* HERO IMAGE CODE STARTS */
+.heroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pexels-felix-mittermeier-2832022.jpg);
+    height: 80vmin;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom: 4px solid white;
+}
+
+.heroText {
+    display: inline-block;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: absolute;
+}
+/* HERO IMAGE CODE ENDS */
+
+/* BANDCAMP EMBED CODE STARTS */
+.musicEmbed {
+    display: block;
+    background-color: #2e2e2e;
+    text-align: center;
+    height: 120px;
+    border-bottom: 4px solid white;
+}
+.musicEmbed iframe {
+    border: 0; 
+    width: 35vw; 
+    min-width: 250px;
+    max-width: 700px;
+    height: 120px;
+}
+/* BANDCAMP EMBED CODE ENDS */
+
+.leadImage {
+    background-image: radial-gradient(circle, #2b2b2b 60%, white 80%);
+    display: inline-flex;
+    float: left;
+    border: 4px solid white;
+    border-radius: 50%;
+    margin: 0.5vmin 3vmin 2vmin 3vmin;
+}
+
+.leadText {
+    margin-right: 3vmin;
+    margin-left: 3vmin;
+    font-size: 3.25vh;
+    text-align: justify;
+}
+
+/* HR WITH TEXT INSERT STARTS Source: https://codepen.io/HardKnocks/pen/abJRqjo?editors=1100 */
+.hrTextInsert {
+    overflow: hidden;
+    text-align: center;
+    font-size: 3vh;
+}
+  
+.hrTextInsert:before, .hrTextInsert:after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 30vw;
+    margin: 0px 25px;
+}
+
+.hrTextInsert:before {
+    right: 0.5em;
+    margin-left: -50%;
+    background-image: linear-gradient(90deg, #5e5e5e, white);
+}
+
+.hrTextInsert:after {
+    left: 0.5em;
+    margin-right: -50%;
+    background-image: linear-gradient(90deg, white, #5e5e5e);
+}
+/* HR WITH TEXT INSERT ENDS */
+
+/* CSS GRID IMAGE ARRAY STARTS */
+.grid-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    padding: 1vh 10vw;
+}
+.grid-container a {
+    background-image: radial-gradient(circle, #2b2b2b 60%, white 80%);
+    width: 20vmax;
+    height: 20vmax;
+    border: 4px solid white;
+    border-radius: 50%;
+}
+/* CSS GRID IMAGE ARRAY ENDS */

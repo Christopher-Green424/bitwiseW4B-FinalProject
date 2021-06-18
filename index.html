@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christopher Green's Webpage!</title>
 
-        <!-- Stylesheet -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
 
-        <!-- Fonts -->
+    <!-- Fonts -->
     <link href="fonts/Roboto-Regular.ttf" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/7ba980ac09.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="noAutoPos">
     <nav id="navBar">
         <p class="navBarTitle noAutoPos">Christopher Green</p>
         <a href="#returnToTop">Home</a>
-        <a href="#" target="_blank">Portfolio</a>
-        <a href="#" target="_blank">Contact</a>
-        <a href="#" target="_blank">About</a>
+        <a href="portfolio.html" target="_blank">Portfolio</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="about.html" target="_blank">About</a>
     </nav>
-            <!-- For Home button -->
+        <!-- For Home button -->
         <a name="returnToTop"></a>
 
     <main>
-            <!-- Hero image and blurb -->
+        <!-- Hero image and blurb -->
         <div role="img" alt="snowy mountain peaks" class="heroImage">
             <div class="heroText">
                 <h1>Welcome to my site!</h1>
@@ -34,9 +38,8 @@
 
 
         <div class="musicEmbed">
-            <iframe style="border: 0; width: 700px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=486403038/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=small/track=730631311/transparent=true/" seamless><a href="https://wicrecordings.bandcamp.com/album/katana-zero-original-soundtrack">Katana ZERO (Original Soundtrack) by LudoWic</a></iframe>
+            <iframe src="https://bandcamp.com/EmbeddedPlayer/album=486403038/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=small/track=730631311/transparent=true/" seamless><a href="https://wicrecordings.bandcamp.com/album/katana-zero-original-soundtrack">Katana ZERO (Original Soundtrack) by LudoWic</a></iframe>
         </div>
-
 
         <article>
             <img class="leadImage" src="../img/placeholderpic.png" alt="a knight placeholder picture">
@@ -44,29 +47,41 @@
         </article>
     </main>
 
-        <!-- Horizontal ruler with text here -->
+    <!-- Horizontal ruler with text here -->
     <p class="hrTextInsert">Want to know more about me?</p>
 
-        <!-- Hyperlinked images to About, Contact, Portfolio go here -->
+    <!-- Hyperlinked images to About, Contact, Portfolio go here -->
     <nav class="grid-container">
-        <a class="grid-item" href="#"><img src="#" alt=""></a>
-        <a class="grid-item" href="#"><img src="#" alt=""></a>
-        <a class="grid-item" href="#"><img src="#" alt=""></a>
+        <a href="about.html"><img src="#" alt=""></a>
+        <a href="contact.html"><img src="#" alt=""></a>
+        <a href="portfolio.html"><img src="#" alt=""></a>
     </nav>
 
     <p class="hrTextInsert">Thanks for visiting!</p>
 
-        <!-- Footer w/ fake email, phone number, dead links to social media go here -->
+    <!-- Footer w/ fake email, phone number, dead links to social media go here -->
     <footer class="footerBar">
-        <nav>
-            <!-- Social media links go here floated left -->
+        <nav class="footerSocialLinks">
+        <!-- Social media links go here floated left -->
+        <a href="#" onclick="socialAlert()"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" onclick="socialAlert()"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" onclick="socialAlert()"><i class="fab fa-instagram-square"></i></a>
+        <a href="#" onclick="socialAlert()"><i class="fab fa-linkedin"></i></a>
         </nav>
+
         <div class="footerContactTxt">
             <!-- Fake email and phone number go here floated right -->
             <span>(888)888-8888</span>
             <span>fake_email8888@gmail.com</span>
         </div>
     </footer>
+
+    <!-- Script stating social media links are fake -->
+    <script>
+        function socialAlert() {
+          alert("Hello! I'm a fake social media link!");
+        }
+    </script>
 </body>
 
 </html>
