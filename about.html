@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Chris?</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- Fonts -->
+    <link href="fonts/Roboto-Regular.ttf" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/7ba980ac09.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="noAutoPos">
+    <nav id="navBar">
+        <p class="navBarTitle noAutoPos">Christopher Green</p>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="#returnToTop">About</a>
+    </nav>
+        <!-- For Home button -->
+        <a name="returnToTop"></a>
+
+    <main>
+        <p class="hrTextInsert">Here's some of my hobbies!</p>
+    <!-- In study group: check how to make separate cases of accordion class without copy pasting CSS? -->
+        <button class="accordion" style="background-color: #602DA1;">Video Games</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion" style="background-color: #A82323;">Cooking</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion" style="background-color: #C96000;">Exercise</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <p class="hrTextInsert">I like these too, check them out!</p>
+
+        <button class="accordion" style="background-color: #4355FB">Music</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion" style="background-color: #06B84D;">Education</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion" style="background-color: #C31E77;">Restaraunts</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <p class="hrTextInsert">Thanks for visiting!</p>
+    </main>
+
+    <!-- Footer w/ fake email, phone number, dead links to social media go here -->
+    <footer class="footerBar">
+        <nav class="footerSocialLinks">
+        <!-- Social media links go here floated left -->
+        <a href="#" onclick="socialAlert()"><i class="fab fa-twitter-square"></i></a>
+        <a href="#" onclick="socialAlert()"><i class="fab fa-facebook-square"></i></a>
+        <a href="#" onclick="socialAlert()"><i class="fab fa-instagram-square"></i></a>
+        <a href="#" onclick="socialAlert()"><i class="fab fa-linkedin"></i></a>
+        </nav>
+
+        <div class="footerContactTxt">
+            <!-- Fake email and phone number go here floated right -->
+            <span>(888)888-8888</span>
+            <span>fake_email8888@gmail.com</span>
+        </div>
+    </footer>
+
+    <script>
+        //SOCIAL LINK ALERT CODE
+        function socialAlert() {
+            alert("Hello! I'm a fake social media link!");
+        }
+
+        //ACCORDION CODE STARTS HERE source: https://www.w3schools.com/howto/howto_js_accordion.asp
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+        //ACCORDION CODE ENDS HERE
+    </script>
+</body>
+</html>
