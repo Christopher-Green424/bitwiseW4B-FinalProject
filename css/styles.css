@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb {
 
 .footerSocialLinks i {
     color: black;
-    padding: 0vmax 1vmax;
+    padding: 0vmax 0.5vmax;
     font-size: 3vmax;
 }
 
