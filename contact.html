@@ -28,7 +28,33 @@
         <!-- For Home button -->
         <a name="returnToTop"></a>
 
+    <main>
+        <!-- Main contact form goes here -->
+        <form class="contactForm">
+            <fieldset><legend>Please provide your contact info:</legend>
+                <label class="nameInput" for="name">Name:</label>
+                    <input id="name" type="text" placeholder="Enter your name here." required>
+                <label class="phoneInput" for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <label class="emailInput" for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Enter your Email here." required>
+            </fieldset>
 
+            <fieldset><legend>Please specify your gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                    <label id="radio-label1" for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                    <label id="radio-label2" for="female">Female</label>
+                <input type="radio" id="non-binary" name="gender" value="non-binary">
+                    <label id="radio-label3" for="non-binary">Non-Binary</label>
+                <input type="radio" id="agender" name="gender" value="agender">
+                    <label id="radio-label4" for="agender">Agender</label>
+                <input type="radio" id="not-specify" name="gender" value="not-specify">
+                    <label id="radio-label5" for="not-specify">Prefer not to say</label>
+            </fieldset>
+
+        </form>
+    </main>
 
     <!-- Footer w/ fake email, phone number, dead links to social media go here -->
     <footer class="footerBar">

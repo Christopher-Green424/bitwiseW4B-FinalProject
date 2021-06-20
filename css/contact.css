@@ -1,0 +1,24 @@
+.contactForm {
+
+}
+
+.nameInput {
+    font-size: 1em;
+}
+#name {
+    height: 1.75em;
+}
+
+.phoneInput {
+    font-size: 1em;
+}
+#phone {
+    height: 1.75em;
+}
+
+.emailInput {
+    font-size: 1em;
+}
+#email {
+    height: 1.75em;
+}
