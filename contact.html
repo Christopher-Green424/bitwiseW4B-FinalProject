@@ -31,26 +31,43 @@
     <main>
         <!-- Main contact form goes here -->
         <form class="contactForm">
-            <fieldset><legend>Please provide your contact info:</legend>
-                <label class="nameInput" for="name">Name:</label>
-                    <input id="name" type="text" placeholder="Enter your name here." required>
-                <label class="phoneInput" for="phone">Phone number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-                <label class="emailInput" for="email">Email:</label>
-                    <input id="email" type="email" placeholder="Enter your Email here." required>
+            <fieldset><legend>Please provide your contact information:</legend>
+                <label class="nameLabel" for="nameInput">Name:</label>
+                    <input id="nameInput" type="text" placeholder="Enter your name here." required><br><br>
+
+                <label class="emailLabel" for="emailInput">Email:</label>
+                    <input id="emailInput" type="email" placeholder="Enter your email here." required><br><br>
+                    
+                <label class="phoneLabel" for="phoneInput">Phone:</label>
+                    <input type="tel" id="phoneInput" name="phone" placeholder="(123)456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
             </fieldset>
 
-            <fieldset><legend>Please specify your gender:</legend>
-                <input type="radio" id="male" name="gender" value="male">
-                    <label id="radio-label1" for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
-                    <label id="radio-label2" for="female">Female</label>
-                <input type="radio" id="non-binary" name="gender" value="non-binary">
-                    <label id="radio-label3" for="non-binary">Non-Binary</label>
-                <input type="radio" id="agender" name="gender" value="agender">
-                    <label id="radio-label4" for="agender">Agender</label>
-                <input type="radio" id="not-specify" name="gender" value="not-specify">
-                    <label id="radio-label5" for="not-specify">Prefer not to say</label>
+            <fieldset><legend>What is your preferred contact method?</legend>
+                <input type="radio" id="callMethod" name="contactMethod" value="callMethod">
+                    <label id="callMethodLabel" for="callMethod">Call me.</label><br>
+
+                <input type="radio" id="textMethod" name="contactMethod" value="textMethod">
+                    <label id="textMethodLabel" for="textMethod">Text me.</label><br>
+
+                <input type="radio" id="emailMethod" name="contactMethod" value="emailMethod">
+                    <label id="emailMethodLabel" for="emailMethod">Email me.</label>
+            </fieldset>
+
+            <fieldset class="genderForm"><legend>Please state your pronouns:</legend>
+                <input type="radio" id="heHim" name="pronouns" value="heHim">
+                    <label id="proLabel1" for="heHim">He/Him</label><br>
+
+                <input type="radio" id="sheHer" name="pronouns" value="sheHer">
+                    <label id="proLabel2" for="sheHer">She/Her</label><br>
+
+                <input type="radio" id="theyThem" name="pronouns" value="theyThem">
+                    <label id="proLabel3" for="theyThem">They/Them</label><br>
+
+                <input type="radio" id="anyPro" name="pronouns" value="anyPro">
+                    <label id="proLabel4" for="anyPro">Any</label><br>
+
+                <input type="radio" id="notSpecify" name="pronouns" value="notSpecify">
+                    <label id="proLabel5" for="notSpecify">Prefer not to say</label>
             </fieldset>
 
         </form>
