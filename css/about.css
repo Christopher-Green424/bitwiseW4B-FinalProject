@@ -25,6 +25,15 @@
   }
 /* ACCORDION CODE ENDS HERE */
 
+/* Modify .hrTextInsert color for panel */
+.panel .hrTextInsert:before {
+  background-image: linear-gradient(90deg, #2b2b2b, white);
+}
+
+.panel .hrTextInsert:after {
+  background-image: linear-gradient(90deg, white, #2b2b2b);
+}
+
 .embedGrid {
   display: grid;
   justify-items: center;
@@ -32,8 +41,25 @@
   margin: auto;
 }
 
-.embedGrid figure figcaption {
+.embedGrid figcaption {
+  min-height: 120px;
   font-size: 16px;
   padding: 0.5vh 1vw;
-  border: 1px solid white;
+  border: 4px solid #A82323;
+}
+
+.picGrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 600px 600px 600px;
+  grid-template-rows: auto auto;
+  margin: auto;
+}
+
+.picGrid figcaption {
+  width: 459px;
+  min-height: 60px;
+  font-size: 16px;
+  padding: 0.5vh 1vw;
+  border: 4px solid #A82323;
 }
