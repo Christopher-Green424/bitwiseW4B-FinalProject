@@ -74,3 +74,9 @@
   grid-template-columns: 370px 370px 370px 370px;
   margin: 2vh 10vw;
 }
+
+.restPanel .embedGrid {
+  margin: 2vh 1.5vw;
+  grid-template-columns: 600px 600px 600px;
+  grid-template-rows: auto auto;
+}
