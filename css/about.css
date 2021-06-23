@@ -24,3 +24,16 @@
     overflow: hidden;
   }
 /* ACCORDION CODE ENDS HERE */
+
+.embedGrid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 600px 600px 600px;
+  margin: auto;
+}
+
+.embedGrid figure figcaption {
+  font-size: 16px;
+  padding: 0.5vh 1vw;
+  border: 1px solid white;
+}

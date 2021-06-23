@@ -88,6 +88,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     text-align: center;
     font-size: 3vh;
+    font-weight: normal;
 }
   
 .hrTextInsert:before, .hrTextInsert:after {
@@ -144,8 +145,7 @@ body::-webkit-scrollbar-thumb {
 
 .footerSocialLinks i {
     color: black;
-    padding: 0vmax 0.5vmax;
+    padding-right: 1vmax;
     font-size: 3vmax;
 }
-
 /* FOOTER CODE ENDS HERE */

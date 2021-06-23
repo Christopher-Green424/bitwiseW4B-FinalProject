@@ -42,19 +42,19 @@
     opacity: 1;
 }
   
-.imgText {
+.imgTextbg {
     background-color: #FFA500;
-    font-size: 16px;
-    padding: 16px 32px;
+    padding: 1vh 1vw;
 }
 
-.imgLink {
+.imgText {
     color: black;
+    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
 }
-.imgLink:visited {color: black;}
+.imgText:visited {color: black;}
 /* TEXT HOVER CODE ADAPTED FROM W3SCHOOLS ENDS */
 
 .fccContainer {
