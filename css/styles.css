@@ -47,6 +47,7 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     background-color: #FFA500;
     overflow: hidden;
+    border-bottom: 4px solid white;
 }
 
 #navBar a {
@@ -81,6 +82,37 @@ body::-webkit-scrollbar-thumb {
     text-decoration: underline;
 }
 /* NAVBAR CODE ENDS */
+
+/* HR WITH TEXT INSERT STARTS Source: https://codepen.io/HardKnocks/pen/abJRqjo?editors=1100 */
+.hrTextInsert {
+    overflow: hidden;
+    text-align: center;
+    font-size: 3vh;
+}
+  
+.hrTextInsert:before, .hrTextInsert:after {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 30vw;
+    margin: 0px 25px;
+}
+
+.hrTextInsert:before {
+    right: 0.5em;
+    margin-left: -50%;
+    background-image: linear-gradient(90deg, #5e5e5e, white);
+}
+
+.hrTextInsert:after {
+    left: 0.5em;
+    margin-right: -50%;
+    background-image: linear-gradient(90deg, white, #5e5e5e);
+}
+/* HR WITH TEXT INSERT ENDS */
 
 /* FOOTER CODE STARTS HERE */
 .footerBar {

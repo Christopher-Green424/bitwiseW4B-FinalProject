@@ -55,37 +55,6 @@
     text-align: justify;
 }
 
-/* HR WITH TEXT INSERT STARTS Source: https://codepen.io/HardKnocks/pen/abJRqjo?editors=1100 */
-.hrTextInsert {
-    overflow: hidden;
-    text-align: center;
-    font-size: 3vh;
-}
-  
-.hrTextInsert:before, .hrTextInsert:after {
-    background-color: white;
-    content: "";
-    display: inline-block;
-    height: 5px;
-    position: relative;
-    vertical-align: middle;
-    width: 30vw;
-    margin: 0px 25px;
-}
-
-.hrTextInsert:before {
-    right: 0.5em;
-    margin-left: -50%;
-    background-image: linear-gradient(90deg, #5e5e5e, white);
-}
-
-.hrTextInsert:after {
-    left: 0.5em;
-    margin-right: -50%;
-    background-image: linear-gradient(90deg, white, #5e5e5e);
-}
-/* HR WITH TEXT INSERT ENDS */
-
 /* CSS GRID IMAGE ARRAY STARTS */
 .grid-container {
     display: grid;
