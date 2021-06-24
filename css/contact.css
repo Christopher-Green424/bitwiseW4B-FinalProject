@@ -44,3 +44,10 @@
 #proLabel3 { }
 #proLabel4 { }
 #proLabel5 { }
+
+#submit {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    margin: 2vh auto;
+}
