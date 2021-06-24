@@ -22,23 +22,6 @@
 }
 /* HERO IMAGE CODE ENDS */
 
-/* BANDCAMP EMBED CODE STARTS */
-.musicEmbed {
-    display: block;
-    background-color: #2e2e2e;
-    text-align: center;
-    height: 120px;
-    border-bottom: 4px solid white;
-}
-.musicEmbed iframe {
-    border: 0; 
-    width: 35vw; 
-    min-width: 250px;
-    max-width: 700px;
-    height: 120px;
-}
-/* BANDCAMP EMBED CODE ENDS */
-
 .leadImage {
     background-image: radial-gradient(circle, #2b2b2b 60%, white 80%);
     display: inline-flex;
